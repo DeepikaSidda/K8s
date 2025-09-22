@@ -54,24 +54,6 @@ By working through this project, you'll develop a deeper understanding of cloud-
 Create EKS cluster with NodeGroup (2 nodes of t2.medium instance type)
 Create EC2 Instance t2.micro (Optional)
 
-##IAM role for ec2	
-```
-{
-	"Version": "2012-10-17",
-	"Statement": [{
-		"Effect": "Allow",
-		"Action": [
-			"eks:DescribeCluster",
-			"eks:ListClusters",
-			"eks:DescribeNodegroup",
-			"eks:ListNodegroups",
-			"eks:ListUpdates",
-			"eks:AccessKubernetesApi"
-		],
-		"Resource": "*"
-	}]
-}
-```
 
 Install Kubectl:
 ```
